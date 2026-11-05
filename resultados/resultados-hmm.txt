@@ -1,0 +1,32 @@
+================================================================================
+RELATÓRIO DE RESULTADOS - PROJETO 2: MODELOS OCULTOS DE MARKOV
+================================================================================
+
+=== Modelo Oculto de Markov: Filtragem, Suavização e Viterbi ===
+Observações: [T, T, F, T, T]
+P(Chuva) Filtragem: [0.8182 0.8834 0.1907 0.7308 0.8673] (tempo: 1.045 ms)
+P(Chuva) Suavização: [0.8673 0.8204 0.3075 0.8204 0.8673] (tempo: 0.485 ms)
+Trajetória Viterbi: [0, 0, 1, 0, 0] (tempo: 0.376 ms)
+Baum-Welch (40 iterações): LL Inicial=-138.63 -> LL Final=-132.96 (tempo: 348.71 ms)
+
+================================================================================
+DETALHAMENTO DA INFERÊNCIA TEMPORAL (MUNDO DO GUARDA-CHUVA):
+================================================================================
+Dia (t)  | Observação         | P(Chuva) Filtr.    | P(Chuva) Suav.     | Viterbi   
+--------------------------------------------------------------------------------
+1        | Com Guarda-Chuva   | 0.8182             | 0.8673             | Chuva     
+2        | Com Guarda-Chuva   | 0.8834             | 0.8204             | Chuva     
+3        | Sem Guarda-Chuva   | 0.1907             | 0.3075             | Sem Chuva 
+4        | Com Guarda-Chuva   | 0.7308             | 0.8204             | Chuva     
+5        | Com Guarda-Chuva   | 0.8673             | 0.8673             | Chuva     
+--------------------------------------------------------------------------------
+
+DESEMPENHO DO ALGORITMO BAUM-WELCH (EM):
+ - Iterações executadas: 40
+ - Log-Verossimilhança: -138.6294 -> -132.9603
+ - Matriz de Transição Estimada:
+[[0.7195 0.2805]
+ [0.3911 0.6089]]
+ - Matriz de Emissão Estimada:
+[[0.1295 0.8705]
+ [0.929  0.071 ]]

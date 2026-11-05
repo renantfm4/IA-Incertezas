@@ -1,0 +1,22 @@
+================================================================================
+RELATÓRIO DE RESULTADOS - PROJETO 3: FILTROS DE KALMAN
+================================================================================
+
+=== Filtro de Kalman: Rastreamento Cinemático 2D ===
+Simulação: 60 passos (dt=0.5s) | Tempo Total: 26.21 ms (0.4368 ms/passo)
+RMSE Posição - Sensor Bruto: 5.1727 m
+RMSE Posição - Filtro Kalman: 2.8094 m (Redução de 45.7%)
+RMSE Velocidade (Estado Oculto): 1.6756 m/s
+Incerteza Inicial (Traço P): 208.36 -> Incerteza Final: 6.9477
+
+================================================================================
+ESTUDO DE SENSIBILIDADE DA MATRIZ DE COVARIÂNCIA R:
+================================================================================
+Fator Multiplicador      | RMSE Kalman (m) 
+---------------------------------------------
+0.01                     | 3.3115          
+0.10                     | 2.8597          
+1.00                     | 2.8094          
+10.00                    | 3.1688          
+100.00                   | 5.9909          
+---------------------------------------------

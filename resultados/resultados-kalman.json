@@ -1,0 +1,34 @@
+{
+  "parametros": {
+    "dt": 0.5,
+    "passos": 60,
+    "sigma_proc": 0.1,
+    "sigma_meas": 5.0
+  },
+  "metricas_desempenho": {
+    "rmse_sensor_bruto": 5.172657988300288,
+    "rmse_filtro_kalman": 2.8094361826347134,
+    "reducao_erro_pct": 45.68679798685315,
+    "rmse_velocidade": 1.6756351854613643,
+    "tempo_total_ms": 26.20999999999185,
+    "tempo_por_passo_ms": 0.4368333333331975,
+    "traco_P_final": 6.947727794897642,
+    "ganho_K_final": 0.13322703931284205
+  },
+  "estudo_sensibilidade_R": {
+    "fatores_multiplicadores": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "rmse_resultante": [
+      3.311462086364438,
+      2.859697021669871,
+      2.8094361826347134,
+      3.168821207308506,
+      5.990906151338894
+    ]
+  }
+}
